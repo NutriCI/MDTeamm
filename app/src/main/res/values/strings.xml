@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Nutlicii</string>
+    <string name="ceklisiimg">ceklis</string>
+    <string name="today_s_goals">Today Goals</string>
+    <string name="graph_icon">graphicon</string>
+    <string name="your_progress">Your Progress</string>
+    <string name="_1350">1350</string>
+    <string name="_91">91%</string>
+    <string name="cardimg">card</string>
+    <string name="_12_october">24 November</string>
+    <string name="sugar">Sugar</string>
+    <string name="g">g</string>
+    <string name="value">24</string>
+    <string name="fatimg">fatimg</string>
+    <string name="fat">Fat</string>
+    <string name="salt">Salt</string>
+    <string name="bmi">BMI</string>
+    <string name="string_today_s_advice">Seimbangkan asupan dengan menambah serat, vitamin, dan mineral dari sayuran, buah, dan biji-bijian. Kurangi lemak jika berasal dari makanan olahan atau gorengan, dan ganti dengan lemak sehat.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_food_add">FoodAddActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string-array name="gender_array">
+        <item>Laki_Laki</item>
+        <item>Perempuan</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="activity_array">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+</resources>

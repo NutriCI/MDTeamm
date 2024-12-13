@@ -1,0 +1,88 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@drawable/background_item"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp">
+
+<LinearLayout
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:orientation="vertical"
+android:paddingEnd="8dp">
+
+<TextView
+    android:id="@+id/textViewDate"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="5 Oktober 2024"
+    android:textColor="#888888"
+    android:textSize="12sp" />
+
+<!-- Horizontal line -->
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#E0E0E0"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="8dp" />
+
+<!-- Title -->
+<TextView
+    android:id="@+id/textViewTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Teh Pucuk Harum Dingin"
+    android:textColor="#000"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    android:paddingBottom="4dp" />
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="4dp">
+
+    <!-- Drink Tag -->
+    <TextView
+        android:id="@+id/textViewDrink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Drink"
+        android:background="@drawable/tag_background"
+    android:textColor="#666666"
+    android:textSize="12sp"
+    android:padding="8dp"
+    android:layout_marginEnd="8dp" />
+
+    <!-- Free sugar Tag -->
+    <TextView
+        android:id="@+id/textViewFreeSugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Free sugar"
+        android:background="@drawable/tag_background"
+        android:textColor="#666666"
+        android:textSize="12sp"
+        android:padding="8dp" />
+</LinearLayout>
+</LinearLayout>
+
+    <!-- Right side (Green 'A' icon) -->
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/green_circle"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="A"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+</LinearLayout>

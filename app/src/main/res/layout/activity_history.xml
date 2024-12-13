@@ -1,0 +1,86 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:layout_marginTop="30dp"
+    tools:context=".UI.View.HistoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/historyTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:fontFamily="@font/pmedium2"
+            android:paddingBottom="8dp"/>
+
+        <!-- Horizontal Date Navigation Layout -->
+        <LinearLayout
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="12">
+
+            <ImageButton
+                android:id="@+id/prev_arrow"
+                android:layout_width="45dp"
+                android:layout_height="42dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/left" />
+
+            <LinearLayout
+                android:id="@+id/datesContainer"
+                android:layout_width="260dp"
+                android:layout_height="70dp"
+                android:layout_weight="10"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="8dp" />
+
+            <ImageButton
+                android:id="@+id/next_arrow"
+                android:layout_width="45dp"
+                android:layout_height="42dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/right" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/food_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:contentDescription="Add Food"
+        app:srcCompat="@android:drawable/ic_input_add"
+        app:tint="@android:color/white"
+        app:backgroundTint="@color/btn" />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/history_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp"
+        android:padding="10dp"
+    />
+
+</LinearLayout>

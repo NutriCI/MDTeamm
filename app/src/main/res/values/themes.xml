@@ -1,0 +1,15 @@
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--  Base application theme for Light Mode  -->
+    <style name="Base.Theme.Nutlicii" parent="Theme.Material3.DayNight.NoActionBar">
+        <!--  Light mode specific colors  -->
+        <item name="colorPrimary">@color/light_primary</item>
+        <item name="colorSecondary">@color/light_secondary</item>
+        <item name="android:colorBackground">@color/light_background</item>
+        <!--  Text colors for Light Mode  -->
+        <item name="android:textColorPrimary">@color/light_text_primary</item>
+        <item name="android:textColorSecondary">@color/light_text_secondary</item>
+    </style>
+    <!--  Application Theme  -->
+    <style name="Theme.Nutlicii" parent="Base.Theme.Nutlicii"/>
+</resources>

@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_marginBottom="8dp">
+
+    <TextView
+        android:id="@+id/aiMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AI message"
+        android:background="@drawable/rounded_background"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:fontFamily="@font/pmedium2"
+        android:layout_gravity="start"/>
+
+    <TextView
+        android:id="@+id/userMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User message"
+        android:background="@drawable/user_message_background"
+        android:padding="8dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:fontFamily="@font/pmedium2"
+        android:layout_gravity="end"/>
+
+</LinearLayout>

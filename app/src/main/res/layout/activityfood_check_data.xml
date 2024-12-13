@@ -1,0 +1,213 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tv_add_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Data"
+        android:textSize="24sp"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"
+        android:fontFamily="@font/pmedium2"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/et_food_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input Food Name"
+        android:textColor="@color/black"
+        android:padding="12dp"
+        android:fontFamily="@font/poppinsr"
+        android:background="@drawable/tag_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <EditText
+            android:id="@+id/et_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Category"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppinsr"
+            android:padding="12dp"
+            android:background="@drawable/tag_background" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_background">
+
+        <!-- Layout for Calories -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/circle_background_small">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Calories"
+                android:fontFamily="@font/pmedium2"/>
+
+            <EditText
+                android:id="@+id/et_calories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="100"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinsr"
+                android:background="@drawable/edit_text_background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cal" />
+        </LinearLayout>
+
+        <!-- Layout for Sugar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:layout_marginBottom="15dp"
+            android:padding="10dp"
+            android:background="@drawable/circle_background_small">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:text="Sugar"
+                android:fontFamily="@font/pmedium2"/>
+
+            <EditText
+                android:id="@+id/et_sugar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="10"
+                android:fontFamily="@font/poppinsr"
+                android:textColor="@color/black"
+                android:padding="8dp"
+                android:background="@drawable/edit_text_background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="g" />
+        </LinearLayout>
+
+        <!-- Layout for Fat -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/circle_background_small">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Fat"
+                android:fontFamily="@font/pmedium2"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_fat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="8"
+                android:textColor="@color/black"
+                android:padding="8dp"
+                android:fontFamily="@font/poppinsr"
+                android:background="@drawable/edit_text_background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="g" />
+        </LinearLayout>
+
+        <!-- Layout for Salt -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:padding="10dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/circle_background_small">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Salt"
+                android:textColor="@color/black"
+                android:fontFamily="@font/pmedium2"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/et_salt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:hint="5"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinsr"
+                android:background="@drawable/edit_text_background" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="g" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save_foods"
+        android:layout_width="173dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_margin="40dp"
+        android:backgroundTint="@color/black"
+        android:text="Save"
+        android:fontFamily="@font/poppinsr"
+        android:textColor="@color/white" />
+
+</LinearLayout>
